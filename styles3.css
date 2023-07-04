@@ -1,0 +1,54 @@
+.showcase{
+    height: 50vh;
+}
+
+/* Our Updates */
+
+.input-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.input-container input {
+    width: 70vw;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.input-container button {
+  position: absolute;
+  top: 50%;
+  padding: 8px;
+  color: white;
+  background: var(--secondary-gradient-10, linear-gradient(135deg, #039 0%, #5938AD 20.67%, #903ABB 47.40%, #C539C4 73.08%, #F736C7 97.40%));;
+  width: 20vh;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none; /* Hide the button by default on mobile view */
+}
+
+#my-button-id{
+    width: 70vw;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    background: var(--secondary-gradient-10, linear-gradient(135deg, #039 0%, #5938AD 20.67%, #903ABB 47.40%, #C539C4 73.08%, #F736C7 97.40%));;
+}
+
+@media (min-width: 768px) {
+  .input-container button {
+    display: inline-block; /* Show the button on desktop view */
+  }
+  #my-button-id{
+    display: none;
+  }
+  .input-container input {
+    padding-right: 40px; /* Adjust this value to leave space for the button */
+    width: 50vh;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+}

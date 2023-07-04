@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phareztech-company-portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles3.css">
+    <script src="https://use.fontawesome.com/139cc83ef8.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+           <img src="./img/Primary logo.svg" style="height: 37px;" />
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a style="color: #F736C7;" class="active" href="#">Home</a></li>
+           <li><a href="#">About us</a></li>
+           <li><a href="#">Products</a></li>
+           <li><a href="#">Blog</a></li>
+           <li><a href="#">Contact</a></li>
+           <li><a href="#"><button>Order our service</button></a></li>
+        </ul>
+     </nav>
+     <!-- Header Showcase -->
+  <header class="showcase content-1">
+   <div class="showcase-content">
+      <div class="wrap">
+           <div class="header-2">
+               <h1>Our Updates</h1>
+            </div>
+            <div class="header-1">
+               <p>Enter your email to get updates on all of our latest projects and news.</p>
+            </div>
+      </div>
+      
+         <div class="input-container">
+            <input type="text" id="my-input">
+            <button id="my-button">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <button id="my-button-id">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+   
+ </header>
+
+
+ <section class="idea">
+    <div class="interesting-idea">
+         <div> <h3>Got an interesting idea?</h3></div>
+         <div><p>Do you have a product idea, want to discuss a project or have potential project collaborations? Tap on the button below to reach out to us.</p></div>
+    </div>
+    <div class="btn-1">
+       <div><button class="btn-2">Order our service</button></div>
+       <div><button class="btn-3">Contact us <i class="fa-solid fa-arrow-right"></i></i></button></div>
+    </div>
+ </section>
+ 
+    <!-- Footer Section -->
+ <footer>
+       <div class="footer-0">
+          <div><img src="./img/Primary avatar.png" alt="" /></div>
+          <div><p style="color: #667085; font-size: 16px;">We wake up everyday thinking of how we can solve human problems with our users’ satisfaction in mind.</p></div>
+          <div><h4>Subscribe to our newsletter</h4></div>
+          <div><p style="color: #667085; font-size: 15px;">Get updates on all of our latest projects and news.</p></div>
+          <div> <input style="color: var(--primary-grey-50, #98A2B3); font-size: 13px;" type="text" placeholder="Enter your email address" /></div>
+          <div><button>Sign up for our newsletter  <i class="fa-solid fa-arrow-right"></i></button></div>
+       </div>
+       <div class="footer-1">
+          <div class="footer-2">
+             <p class="footer-4">Company</p>
+             <p><a href="">About Phareztech</a></p>
+             <p><a href="">Blog</a></p>
+             <p><a href="">Contact Us</a></p>
+          </div>
+          <div class="footer-2">
+             <p class="footer-4">Products</p>
+             <p><a href="">Web</a></p>
+             <p><a href="">Mobile</a></p>
+             <p><a href="">Platform</a></p>
+             <p><a href="">Plugin</a></p>
+          </div>
+          <div class="footer-2">
+             <p class="footer-4">Legal</p>
+             <p><a href="">Privacy Policy</a></p>
+             <p><a href="">Terms of Service</a></p>
+          </div>
+       </div>
+ </footer>
+ 
+ <div class="footer-links">
+    <div class="center-hr">
+       <hr style="margin-top: 16px;">
+    </div>
+    <div class="footer-end">
+       <div class="icons">
+          <i class="fa-brands fa-facebook"></i>   
+          <i class="fa-brands fa-twitter"></i> 
+          <i class="fa-brands fa-linkedin"></i>
+       </div>
+       <div class="icons">
+          <p style="font-size: 16px; text-align: center; font-size: 14px; color: #667085;">Copyright © 2022. Phareztech. All rights reserved.</p>
+       </div>
+    </div>
+ </div>
+
+ <script>
+   window.addEventListener('resize', handleResize);
+
+function handleResize() {
+  const button = document.getElementById('my-button');
+  const input = document.getElementById('my-input');
+
+  if (window.innerWidth < 768) {
+    input.style.paddingRight = '0';
+    button.style.display = 'none';
+  } else {
+    input.style.paddingRight = '40px';
+    button.style.display = 'inline-block';
+  }
+}
+
+// Initial call to handleResize on page load
+handleResize();
+
+ </script>
+ </body>
+ </html>
